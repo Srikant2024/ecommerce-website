@@ -401,6 +401,7 @@ footer {
     text-align: center;
     position: relative;
     bottom: 0;
+    box-sizing:border-box;
 }
 
 .footer1 {
@@ -771,11 +772,13 @@ p {
         }
     
         footer {
-            padding: 15px;
+            padding: 10px;
+            font-size:14px;
             text-align: center;
         }
         .footer-content{
             padding: 0 10px;
+            text-align:center;
         }
     
         .footer-social-container {
