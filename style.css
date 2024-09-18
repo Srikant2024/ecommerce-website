@@ -422,7 +422,7 @@ footer {
     font-family: Arial, sans-serif;
     background :url(loginpage.jpg) center  no-repeat;
     background-size:cover;
-    background-position: center;
+    background-position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -786,7 +786,7 @@ p {
         }
         #loginpage{
             background-size: cover;
-            background-position: center;
+            background-position: center fixed;
             height :100vh;
             width:100vw;
         }
