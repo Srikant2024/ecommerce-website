@@ -395,9 +395,12 @@ ul li a:hover{
 }
 footer {
     background-color: #333;
+    width: 100%;
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 .footer1 {
@@ -413,28 +416,17 @@ footer {
     color: white;
     text-decoration: none;
 }
-
-footer {
-    margin-top: 5px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /* login page */
 #loginpage{
     font-family: Arial, sans-serif;
     background :url(loginpage.jpg) center  no-repeat;
     background-size:cover;
-    background-position: top center;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
 }
 
 .login-container {
@@ -709,7 +701,7 @@ p {
         }
     
         .fa {
-            font-size: 16px;
+            font-size: 19px;
             width: 35px;
             padding: 6px;
         }
@@ -780,15 +772,24 @@ p {
     
         footer {
             padding: 15px;
+            text-align: center;
+        }
+        .footer-content{
+            padding: 0 10px;
         }
     
         .footer-social-container {
             margin: 15px 0;
         }
+        #loginpage{
+            background-size: cover;
+            background-position: center;
+            height :100vh;
+        }
         .login-container {
             padding: 20px;
             max-width: 90%; /* Reduces the container size for smaller screens */
-            margin-bottom: 100px;
+            margin-bottom: 180px;
         }
     
         h2 {
@@ -968,11 +969,17 @@ p {
     }
 
     footer {
-        padding: 20px;
+        padding: 15px;
+          text-align: center;   
     }
 
     .footer-social-container {
         margin: 20px 0;
+    }
+    #loginpage{
+        background-size: cover;
+        background-position:center;
+        height: 100vh;
     }
     .login-container {
         padding: 30px;
