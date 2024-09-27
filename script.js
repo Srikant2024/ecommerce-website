@@ -42,3 +42,23 @@ addToCartButtons.forEach(button => {
         // You can extend this function to handle cart logic
     });
 });
+// JavaScript to filter products based on search query
+function searchProducts() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const products = document.querySelectorAll('.product-card');
+
+    products.forEach((product) => {
+        const productName = product.querySelector('h3').textContent.toLowerCase();
+        if (productName.includes(searchInput)) {
+            product.style.display = 'inline-block';
+        } else {
+            product.style.display = 'none';
+        }
+    });
+}
+// Assuming you have some way to store cart items, e.g., localStorage
+function addToCart(productId) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(productId); // Add product ID to cart
+    localStorage.setItem('cart', JSON.stringify(cart)); // Save cart to localStorage
+}
