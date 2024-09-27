@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .faq {
+            margin-bottom: 10px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class ="faq">
+            <div class="faq-question" onclick="toggleAnswer(0)"> What types of anime products do you offer?</div>
+            <div class="faq-answer" id="answer0">We offer a wide variety of anime products, including keychains, action figures, toys, katanas, posters, and more. Our collection is updated frequently with the latest and most popular items from your favorite anime series..</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(1)">What is your return policy?</div>
+            <div class="faq-answer" id="answer1">Our return policy allows returns within 7 days of purchase.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(2)"> Does offline stores availble?</div>
+            <div class="faq-answer" id="answer2">No , Not now but opening soon.</div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-question" onclick="toggleAnswer(3)">How can I verify my order?</div>
+            <div class="faq-answer" id="answer3">Once you make your order , you'll receive a  call .</div>
+        </div>
+    <div class="faq">
+        <div class="faq-question" onclick="toggleAnswer(4)">What payment methods do you accept?</div>
+        <div class="faq-answer" id="answer4"> We accept cash on order and UPI payment  </div>
+    </div>
+    <div class="faq"> 
+        <div class="faq-question" onclick="toggleAnswer(5)">How can I contact customer support?</div>
+        <div class="faq-answer" id="answer5">You can reach our customer support team via the "Contact Us" page on our website. We are available to answer any questions or resolve issues Monday through Friday, 9 AM to 5 PM (GMT).</div>
+    </div>
+
+    <script>
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById('answer' + answerId);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
