@@ -54,6 +54,7 @@
 .faq-logo:hover{
     opacity: 0.7;
 }
+
 body,html{
     display: flex;
     flex-direction: column;
@@ -91,7 +92,7 @@ ul li{
 ul li a{
     padding: 10px 20px;
     text-decoration: none;
-    color: antiquewhite;
+    color: rgb(14, 8, 1);
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
@@ -519,21 +520,21 @@ button:hover {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3a3a3cb; /* Light background color */}
-.wishlist-logo{
-        position: absolute;
-        margin-top: 10px;
-        right: 10px;
-    }
-    .wishlist img{
-        width: 40px; /* Adjust the size of the logo as needed */
-        height: 40px;
-    }
-    .wishlist:hover{
-        opacity: 0.7;
-    }
-
-    .search-bar {
+    background-color: #f3a3a3cb;
+}
+.wishlitlogo {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.wishlistlogo img{
+    width: 30px; /* Adjust the size of the logo as needed */
+    height: 30px;
+}
+.wishlistlogo:hover{
+    opacity: 0.7;
+}
+.search-bar {
     text-align: center; /* Center the search bar */
     margin: 20px 0; /* Space above and below the search bar */
 }
@@ -748,18 +749,30 @@ li {
         letter-spacing: 1px;
         margin-top: 5px;
     }
-    footer {
-        padding: 15px; /* Adjust padding */
-        font-size: 14px; /* Adjust font size */
-    }
+        footer {
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+        }
     
-    .footer-social-container {
-        flex-direction: column; /* Stack social links */
-    }
+        .footer1 {
+            margin-bottom: 5px;
+        }
     
-    .footer-social-container .social-link {
-        margin-bottom: 10px; /* Reduce margin between links */
-    }
+        .footer-social-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column; /* Stack the social links vertically */
+            align-items: center;
+            margin: 10px 0;
+        }
+    
+        .footer-social-container .social-link {
+            margin-bottom: 10px;
+        }
+    
     .animated-text {
         font-size: 18px; /* Adjust animated text size */
     }
